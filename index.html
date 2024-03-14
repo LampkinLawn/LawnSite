@@ -17,15 +17,12 @@
             color: #fff;
             padding: 20px;
             text-align: center;
-            position: relative;
         }
 
         .logo {
             width: 150px; /* Set your logo width */
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+            margin: 20px auto; /* Center the logo horizontally */
+            display: block; /* Ensure the logo is centered */
         }
 
         .container {
@@ -50,9 +47,9 @@
 </head>
 <body>
     <header>
-        <img src="placeholder_logo.png" alt="Logo" class="logo">
         <h1>My Simple Webpage</h1>
     </header>
+    <img src="placeholder_logo.png" alt="Logo" class="logo">
     <div class="container">
         <h2>Welcome to my simple webpage!</h2>
         <p>This is a basic example of a static webpage using HTML and CSS.</p>
