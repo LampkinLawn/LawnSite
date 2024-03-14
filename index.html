@@ -1,6 +1,3 @@
-Sure, here's a simple static webpage example using HTML and CSS:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +17,15 @@ Sure, here's a simple static webpage example using HTML and CSS:
             color: #fff;
             padding: 20px;
             text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            width: 150px; /* Set your logo width */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
 
         .container {
@@ -44,6 +50,7 @@ Sure, here's a simple static webpage example using HTML and CSS:
 </head>
 <body>
     <header>
+        <img src="placeholder_logo.png" alt="Logo" class="logo">
         <h1>My Simple Webpage</h1>
     </header>
     <div class="container">
