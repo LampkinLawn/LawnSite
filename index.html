@@ -39,9 +39,32 @@
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            bottom: 0;
             width: 100%;
+        }
+
+        .footer-icons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .footer-icons a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .footer-icons a:hover {
+            color: #A6E04C;
+        }
+
+        .body-text {
+            margin-bottom: 20px;
+        }
+
+        .body-image {
+            width: 100%;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -53,8 +76,19 @@
     <div class="container">
         <h2>Welcome to Lampkin Home & Lawn Services</h2>
         <p>This is a basic example of a static webpage using HTML and CSS.</p>
+        <input type="text" class="body-text" placeholder="Enter your name">
+        <input type="text" class="body-text" placeholder="Enter your email">
+        <input type="text" class="body-text" placeholder="Enter your message">
+        <img src="placeholder_image1.png" alt="Placeholder Image" class="body-image">
+        <img src="placeholder_image2.png" alt="Placeholder Image" class="body-image">
+        <img src="placeholder_image3.png" alt="Placeholder Image" class="body-image">
     </div>
     <footer>
+        <div class="footer-icons">
+            <a href="tel:123456789"><img src="phone_icon.png" alt="Phone"></a>
+            <a href="mailto:dummy@example.com"><img src="email_icon.png" alt="Email"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook_icon.png" alt="Facebook"></a>
+        </div>
         &copy; 2024 Lampkin Home & Lawn Services
     </footer>
 </body>
