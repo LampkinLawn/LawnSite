@@ -35,7 +35,19 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
-            flex: 1;
+            display: flex; /* Use flexbox for container */
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: space-between; /* Space between items */
+        }
+
+        .body-paragraph {
+            width: 48%; /* Adjust width of paragraphs */
+        }
+
+        .body-image {
+            width: 2.5in;
+            display: block;
+            margin: 20px auto; /* Increase the spacing between images */
         }
 
         footer {
@@ -66,12 +78,6 @@
         .footer-icons a:hover {
             color: #A6E04C;
         }
-
-        .body-image {
-            width: 2.5in;
-            display: block;
-            margin: 20px auto; /* Increase the spacing between images */
-        }
     </style>
 </head>
 <body>
@@ -80,14 +86,18 @@
     </header>
     <img src="Pictures/IconOnly_Transparent.png" alt="Logo" class="logo">
     <div class="container">
-        <h2>Welcome to Lampkin Home & Lawn Services</h2>
-        <p>This is a basic example of a static webpage using HTML and CSS.</p>
-        <p class="body-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non libero et enim tristique ultricies. Fusce nec semper est. Pellentesque scelerisque consequat nisi, ac vestibulum nulla posuere vitae.</p>
-        <p class="body-paragraph">In ac ligula vitae tortor tincidunt fringilla. Nam auctor felis vitae eros ultrices, id tristique quam dapibus. Integer sed vehicula orci, non volutpat enim. Ut vel velit vitae ligula convallis fringilla.</p>
-        <p class="body-paragraph">Nunc nec mi id sem vestibulum facilisis. Phasellus nec libero enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc aliquam odio eros, vel bibendum velit blandit ac.</p>
-        <img src="Pictures/landscaping.jpg" alt="Placeholder Image" class="body-image">
-        <img src="Pictures/landscaping 2.jpg" alt="Placeholder Image" class="body-image">
-        <img src="Pictures/landscaping 3.jpg" alt="Placeholder Image" class="body-image">
+        <div>
+            <h2>Welcome to Lampkin Home & Lawn Services</h2>
+            <p>This is a basic example of a static webpage using HTML and CSS.</p>
+            <p class="body-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non libero et enim tristique ultricies. Fusce nec semper est. Pellentesque scelerisque consequat nisi, ac vestibulum nulla posuere vitae.</p>
+            <p class="body-paragraph">In ac ligula vitae tortor tincidunt fringilla. Nam auctor felis vitae eros ultrices, id tristique quam dapibus. Integer sed vehicula orci, non volutpat enim. Ut vel velit vitae ligula convallis fringilla.</p>
+            <p class="body-paragraph">Nunc nec mi id sem vestibulum facilisis. Phasellus nec libero enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc aliquam odio eros, vel bibendum velit blandit ac.</p>
+        </div>
+        <div>
+            <img src="Pictures/landscaping.jpg" alt="Placeholder Image" class="body-image">
+            <img src="Pictures/landscaping 2.jpg" alt="Placeholder Image" class="body-image">
+            <img src="Pictures/landscaping 3.jpg" alt="Placeholder Image" class="body-image">
+        </div>
     </div>
     <footer>
         <div class="footer-icons">
